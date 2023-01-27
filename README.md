@@ -15,4 +15,4 @@
 | ReactBootstrap | <https://react-bootstrap.github.io/>       |
 | React        | <https://reactjs.org/>                       |
 | React-Icons  | <https://react-icons.github.io/react-icons/> |
-| React-Router | <https://reactrouter.com//>                  |
+| React-Router | <https://reactrouter.com/>                   |
