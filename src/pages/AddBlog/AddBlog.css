@@ -1,0 +1,14 @@
+.add-blog .form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.add-blog .main-button {
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}

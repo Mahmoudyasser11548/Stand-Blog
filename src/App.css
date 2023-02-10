@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+:root {
+  --gray-color: #7a7a7a;
+  --blue-color: #03a9f4;
+  --white-color: #ffffff;
+  --light-gray: #f7f7f7;
+  --dark-color: #20232e;
+  --transition: 0.5s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+}
+
+p {
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #7a7a7a;
+  line-height: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+.main-button {
+  display: inline-block;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  transition: var(--transition);
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px 2px rgba(238, 238, 238, 0.5);
+  border: none;
+  cursor: pointer;
+}
+
+.main-button:hover {
+  opacity: 0.8;
+}
+
+div>.title>h3 {
+  color: var(--blue-color);
+}
+
+div>.title>span {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 10px 0 40px;
+}
+
+.form .input-box {
+  position: relative;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.form .input-box input,
+.form .input-box textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--gray-color);
+  border-radius: 5px;
+  outline: none;
+  transition: var(--blue-color);
+}
+
+.form .input-box span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  color: var(--gray-color);
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+
+.form .input-box input:valid~span,
+.form .input-box input:focus~span,
+.form .input-box textarea:valid~span,
+.form .input-box textarea:focus~span {
+  color: var(--blue-color);
+  transform: translateX(10px) translateY(-7px);
+  font-size: 14px;
+  padding: 0px 12px;
+  background: #fff;
+  border-left: 1px solid var(--blue-color);
+  border-right: 1px solid var(--blue-color);
+}
+
+.form .input-box input:valid,
+.form .input-box input:focus,
+.form .input-box textarea:valid,
+.form .input-box textarea:focus {
+  border-color: var(--blue-color);
+}
+
+@media (max-width: 768px) {
+  div .title {
+    text-align: center;
+  }
+}

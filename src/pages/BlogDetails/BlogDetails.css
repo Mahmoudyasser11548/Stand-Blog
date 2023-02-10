@@ -1,0 +1,30 @@
+.blog-detail {
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.blog-detail h2 {
+  margin-bottom: 15px;
+  color: var(--blue-color);
+}
+
+.blog-detail p {
+  line-height: 2;
+  font-size: 18px;
+  word-break: break-word;
+}
+
+.blog-detail article {
+  margin-bottom: 25px;
+  border-bottom: 2px solid var(--light-gray);
+}
+
+.blog-detail .add-commment h3 {
+  color: var(--black-color);
+  border-bottom: 2px solid var(--light-gray);
+  margin-bottom: 20px;
+}
+
+.blog-detail .main-button {
+  margin: 15px auto;
+}

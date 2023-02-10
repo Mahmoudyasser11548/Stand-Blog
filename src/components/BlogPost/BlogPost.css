@@ -1,0 +1,89 @@
+.bloglist {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .bloglist {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+    gap: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .bloglist {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    gap: 15px;
+  }
+}
+
+.bloglist .blog {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 1px solid var(--light-gray);
+  box-shadow: 0px 0px 4px 2px rgba(238, 238, 238, 0.5);
+  transition: var(--transition);
+}
+
+.bloglist .blog:hover {
+  transform: translateY(-8px);
+}
+
+.bloglist .blog:hover img {
+  filter: none;
+}
+
+.bloglist .blog:hover h2 {
+  color: var(--blue-color)
+}
+
+.bloglist .blog img {
+  width: 100%;
+  height: 350px;
+  border-radius: 15px 15px 0 0;
+  transition: var(--transition);
+  filter: grayscale();
+}
+
+.bloglist .blog .txt {
+  padding: 20px;
+}
+
+.bloglist .blog .txt h2 {
+  transition: var(--transition);
+  font-size: 20px;
+  max-width: 270px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.bloglist .blog .txt p {
+  height: 80px;
+  overflow: hidden;
+  padding: 10px 0 10px;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+
+.bloglist .txt .Social {
+  display: flex;
+  margin: 10px 0;
+}
+
+.bloglist .txt svg {
+  font-size: 25px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+
+.bloglist .txt svg:hover {
+  color: var(--blue-color);
+}

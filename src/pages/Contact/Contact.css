@@ -1,0 +1,90 @@
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  padding: 50px 0;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--light-gray);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  flex-basis: 60%;
+}
+
+.form .per-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form .per-info .input-box {
+  flex-basis: 49%;
+}
+
+.form textarea {
+  height: 300px;
+}
+
+.info {
+  flex-basis: 35%;
+}
+
+.info ul li {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--black-color);
+  margin: 10px 0;
+}
+
+.info ul span {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: var(--gray-color);
+  padding-bottom: 15px;
+  margin: 15px 0;
+}
+
+.info ul span:not(span:last-child) {
+  display: block;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact-form .form {
+    flex-basis: 1000%;
+  }
+
+  .form .per-info {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .form .per-info input {
+    flex-basis: 100%;
+  }
+
+  .info {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  .info h2 {
+    font-size: 22px;
+  }
+
+  .info ul li {
+    font-size: 20px;
+  }
+}

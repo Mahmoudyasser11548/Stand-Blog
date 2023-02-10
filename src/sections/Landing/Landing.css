@@ -1,0 +1,88 @@
+.landing {
+  height: 80vh;
+  position: relative;
+}
+
+.landing::before {
+  bottom: 50px;
+  left: 80px;
+  height: 80px;
+  background-image: url('/src/assets/images/032-blog.png');
+  transform: rotate(365deg);
+}
+
+.landing::after {
+  top: 50px;
+  right: 80px;
+  background-image: url('../../assets/images/003-computer.png');
+  height: 70px;
+  transform: rotate(-365deg);
+}
+
+.landing::before,
+.landing::after {
+  content: '';
+  position: absolute;
+  background-size: cover;
+  border-radius: 8px;
+  width: 80px;
+  box-shadow: 0px 0px 40px 2px rgb(33 150 243 / 30%);
+}
+
+.landing .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 2;
+}
+
+.landing span {
+  display: block;
+  font-weight: 700;
+}
+
+.landing span:nth-child(1) {
+  font-size: 45px;
+  letter-spacing: 3px;
+}
+
+.landing span:nth-child(2) {
+  color: var(--blue-color);
+  font-size: 25px;
+}
+
+.landing p {
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 500px;
+  color: var(--gray-color);
+}
+
+@media (max-width: 768px) {
+  .landing p {
+    display: none;
+  }
+
+  .landing span:nth-child(1) {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  .landing span:nth-child(2) {
+    font-size: 20px;
+  }
+
+  .landing .text {
+    width: 250px;
+  }
+
+  .landing::before {
+    left: 40px;
+  }
+
+  .landing::after {
+    right: 40px;
+  }
+}
